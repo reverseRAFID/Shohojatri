@@ -165,7 +165,7 @@ while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
             $row2 = mysqli_fetch_array($result2);
             
             //Get phone number:
-            if($_SESSION['user_id']){
+            if(array_key_exists('user_id', $_SESSION)){
              $phonenumber = $row2['phonenumber'];   
             }else{
              $phonenumber = "Please sign up! Only members have access to contact information.";   
