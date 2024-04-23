@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+/*Background Image*/
+body{
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 20px;
+    background: linear-gradient(180deg, #2b0e10 0%, #07080d 100%) fixed !important;
+    background-size: cover;
+    box-sizing: border-box;
+    cursor: none;
+
+    .cursor {
+      pointer-events: none;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      mix-blend-mode: difference;
+      z-index: 1000;   
+    } 
+}
+
+
+/*Style Jumbotron*/
+.jumbotron{
+    background-color: transparent;
+    text-align: center;
+    letter-spacing: 2.5px;
+    padding: 10px;
+    margin-top: 150px;
+}
+
+/*buttons*/
+.signup{
+    margin-top: 50px;   
+    cursor: none;
+}
+
+.green{
+    
+    background-color: yellow; 
+    color: black;
+    text-transform: capitalize;
+    cursor: none;
+    border-bottom-right-radius: 40%;
+    box-shadow: 0 0 5px yellow, 0 0 15px yellow;
+}
+
+.green:hover{
+    background-color: cyan;   
+    cursor: none;
+    font-weight: bold;
+    text-decoration: #e02626;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 200px cyan;
+}
+
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+/*Style the footer*/
+.footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+}
+/* Navigation bar */
+.navbar-custom, .footer {
+  background-color: linear-gradient(135deg, rgba(0,255,255,0.1) 0%, rgba(255, 0, 0, 0.1) 100%);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 247, 255, 0.1);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe02626', endColorstr='#ff9c1919', GradientType=0); /* Gradient background for IE */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+.navbar-custom .navbar-brand {
+  color: cyan; /* White text color for brand */
+  font-weight: bold; /* Bold font weight */
+}
+
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #f2f2f2; /* Lighter text color on hover/focus */
+}
+
+.navbar-custom .navbar-nav > li > a {
+  color: #ffffff; /* White text color for links */
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: #f2f2f2; /* Lighter text color on hover/focus */
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background on hover/focus */
+}
+
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: #ffffff; /* White text color for active link */
+  background-color: #801515; /* Dark red background color for active link */
+}
+
+.navbar-custom .navbar-toggle {
+  border-color: #dddddd; /* Light gray border color for toggle button */
+}
+
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #dddddd; /* Light gray background color on hover/focus */
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #ffffff; /* White color for toggle button bars */
+}
+
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+  border-color: #438b9b; /* Border color for collapsed navbar */
+}
+
+@media (max-width: 767px) {
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff; /* White text color for dropdown menu items */
+  }
+
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #f2f2f2; /* Lighter text color on hover/focus */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background on hover/focus */
+  }
+
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff; /* White text color for active dropdown item */
+    background-color: #801515; /* Dark red background color for active dropdown item */
+  }
+}
+
+.navbar-custom .navbar-link {
+  color: #ffffff; /* White color for navbar links */
+}
+
+.navbar-custom .navbar-link:hover {
+  color: #f2f2f2; /* Lighter color on hover */
+}
